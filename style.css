@@ -92,6 +92,7 @@ a:hover {
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
+    /*filter:contrast(200%);*/
     background-size: 280px 280px;
 }
 
@@ -753,7 +754,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(51, 49, 43, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -818,12 +819,36 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere-compressed.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation-compressed.jpg");
 }
+
+
+
+
+
+.bloc2__slogan{
+    max-width:800px;
+    margin:0 auto;
+    font-size:22px;
+    
+    color:#80667b;
+    font-weight:500;
+}
+
+.italic{
+    font-style:italic;
+}
+
+.bloc2__signature{
+    font-size:15px;
+}
+
+/* ------- MEDIAS ------- */
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -848,13 +873,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1038,5 +1063,28 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+}
+
+
+/*-------ajouts personnels-------------*/
+
+.background-black{
+    background-color:rgba(51, 49, 43, 0.8);
+
+}
+
+.max-400{
+    max-width:400px;
+    margin:0 auto;
+}
+
+p{
+    font-size:13px;
+}
+
+@media (max-width: 767px) {
+    h1{
+        font-size:25px !important;
     }
 }
