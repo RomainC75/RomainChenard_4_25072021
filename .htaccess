@@ -65,7 +65,7 @@
 
   # HTML
 
-    ExpiresByType text/html                             "access plus 0 seconds"
+    ExpiresByType text/html                             "access plus 1 month"
 
   # JavaScript
 
