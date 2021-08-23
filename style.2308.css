@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper-compressed.png");
+    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -1093,11 +1093,7 @@ p{
 }
 
 .footer__para__liste li{
-    color:#040404 !important;
-}
-
-.footer__para__liste li a{
-    color:black !important;
+    color:#3d3d3d !important;
 }
 
 h3 , .footer{

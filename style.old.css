@@ -91,7 +91,8 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper-compressed.png");
+    background: url("img/texture-paper.png");
+    /*filter:contrast(200%);*/
     background-size: 280px 280px;
 }
 
@@ -753,7 +754,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(51, 49, 43, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -775,8 +776,7 @@ h4 {
 }
 
 .tc-white {
-    /*color: #F3976C!important;*/
-    color: #f7a37d!important;
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
@@ -790,7 +790,7 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF;
+    color: #FFFFFF!important;
 }
 
 .ltc-white:hover {
@@ -819,14 +819,36 @@ h4 {
 }
 
 .bg-banniere {
-    /*background-image: url("img/la-chouette-agence-banniere.jpg");*/
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/la-chouette-agence-banniere-compressed.jpg ');
+    background-image: url("img/la-chouette-agence-banniere-compressed.jpg");
 }
 
 .bg-presentation {
-    /*background-image: url("img/image-de-presentation.bmp");*/
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/image-de-presentation-compressed.jpg');
+    background-image: url("img/image-de-presentation-compressed.jpg");
 }
+
+
+
+
+
+.bloc2__slogan{
+    max-width:800px;
+    margin:0 auto;
+    font-size:22px;
+    
+    color:#80667b;
+    font-weight:500;
+}
+
+.italic{
+    font-style:italic;
+}
+
+.bloc2__signature{
+    font-size:15px;
+}
+
+/* ------- MEDIAS ------- */
+
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1044,138 +1066,9 @@ h4 {
     }
 }
 
-/*--------------PERSO --------------------*/
 
-.bgc-atomic-tangerine2{
-    background-color:black;
-}
+/*-------ajouts personnels-------------*/
 
-.subtitle{
-    font-size:25px;
-    font-weight:600;
-}
-
-.subtext{
-    font-size:20px;
-    
-}
-
-.bloc2__slogan{
-    font-size:22px;
-    font-weight:500;
-    max-width:600px;
-    margin:0 auto 10px auto;
-
-}
-
-p{
-    font-size:15px;
-}
-
-.italic{
-    font-style:italic;
-}
-
-.contact-button{
-    color:black !important;
-}
-
-.links-centered{
-    margin-top:40px;
-}
-
-
-
-.footer__para{
-    font-size:20px;
-    font-weight:600;
-    color:#3d3d3d !important;
-}
-
-.footer__para__liste li{
-    color:#040404 !important;
-}
-
-.footer__para__liste li a{
-    color:black !important;
-}
-
-h3 , .footer{
-    font-size:18px;
-}
-h3 + p , .centerText{
-    font-size:17px;
-}
-
-.img-responsive{
-    width:100%;
-}
-
-/* Set the size of the div element that contains the map */
-#map {
-    height: 400px;
-    
-    width: 100%;
-    
-  }
-
-
-.adressMapC p{
-    text-align:center;
-    margin-top:20px;
-}
-
-.adressMapC p , label{
-    font-size:16px;
-    font-weight:500;
-}
-
-h2[class="mg-md text-center"] + p {
-    font-size:17px;
-}
-
-.btn:focus {
-    text-decoration:underline;
-}
-
-.social:focus span{
-    border:1px solid black;
-}
-
-a[data-lightbox]:focus::before {
-    content: "+";
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 32px;
-    width: 50px;
-    height: 50px;
-    margin-left: -25px;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, .6);
-    color: #FFF;
-    font-weight: 100;
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-
-.contact-link{
-    color:white !important;
-}
-.contact-link:focus{
-    border:1px solid white;
-
-}
-
-.navbar-brand:focus{
-    border:1px solid black;
-}
-
-.nav-link:focus{
-    border:1px solid black;
-}
-/*
 .background-black{
     background-color:rgba(51, 49, 43, 0.8);
 
@@ -1185,21 +1078,23 @@ a[data-lightbox]:focus::before {
     max-width:400px;
     margin:0 auto;
 }
-*/
 
+p{
+    font-size:13px;
+}
 
 @media (max-width: 767px) {
-    /*h1{
+    h1{
         font-size:25px !important;
     }
     .image-centered{
-        
+        /*margin:0 auto 24px auto;*/
         width:100%;
-    }*/
+    }
     .links-centered{
         display:flex;
        justify-content:center;
-
+        
     }
 
 }
